@@ -1,0 +1,13 @@
+# Copy to .github/workflows/self-heal.yml in the connected repo.
+# Placeholder only: the real agent step is built later.
+name: Self-heal
+on:
+  workflow_dispatch:
+    inputs:
+      error_id: { description: "Error ID from the self-heal backend", required: true }
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Agent step goes here (Claude Code or Codex)"

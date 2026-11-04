@@ -1,0 +1,15 @@
+# Example config. Copy this folder into each connected repo.
+mode: approval            # "auto-deploy" merges and deploys passing fixes; "approval" waits for a human
+max_attempts_per_bug: 3
+agent: claude-code        # claude-code | codex
+protected_files:
+  - .github/workflows/**
+  - .selfheal/**
+  - .env*
+  - docs/planted-bugs.md
+notifications:
+  channel: discord        # discord | slack | email
+  # The webhook URL / address lives in backend env vars, never here.
+rollback:
+  error_rate_increase_percent: 20
+  watch_minutes: 30
