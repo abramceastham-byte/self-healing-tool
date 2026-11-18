@@ -13,6 +13,8 @@ Stack: FastAPI on Railway, Neon PostgreSQL, React on Vercel, Claude Code or Code
 
 `demo-app/` is a git submodule (its own repo, so the workflow runs in it). Clone with `git clone --recurse-submodules`.
 
+**Testing this prototype?** Start with [`TESTING.md`](TESTING.md).
+
 See `CLAUDE.md` for architecture, layout, and how to run each part.
 
 ## AI Use
